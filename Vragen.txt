@@ -1,0 +1,70 @@
+- Augry gebruiken met debugging
+- RXjs --> subscribe --> 
+- *ngFor
+
+------
+
+
+VOOR DEZE PUBLIC PROPERTIES IN DE CONSTRUCTOR, HOEF JE GEEN GETTERS/SETTERS TE DEFINIEREN IN JE CLASS!!!
+PLAATS DEZE MODEL CITY IN EEN SHARED LIB
+
+export class City{
+	constructor(
+		public id: number,
+		public name: string,
+		public province: string
+	){	}
+}
+
+
+---------------
+
+@IMPORT CSS niet in je INDEX.HTML
+DOE DEZE IMPORT IN JE STYLES.CSS PLATSEN OF in de ANGULAR-CLI.JSON
+
+a global stylesheet can be linked inside angular-cli.json under the "styles" key. This is a reference to a file relative to the src/ directory, which is style.css by default.
+
+---------
+
+
+JE KAN IEDERE EVENT AFVANGEN --> ZIE MDN --> https://developer.mozilla.org/en-US/docs/Web/Events
+DUSook mouseclick events , mousemove, batterypower event ..
+
+
+
+---------
+
+$0  --> zoeken op property-waarden in Chrome
+
+----
+
+Augury --> Plugin in Chrome voor Debugging en opzet Achitectuur
+In Augury $a gebruien ipv $0
+
+------------
+
+The async pipe subscribes to an Observable or Promise and returns the latest value it has emitted.
+
+''Async pipe'' vervangt de subscribe - block
+
+-----------
+
+onNgDedestroy --> unsubscribe here your subscription
+
+-----
+
+14-router-parameter
+
+als sprake van GENESTE subscribe (is een 'code smell') ---> dan switchMap of flatMap gebruiken  (switchMap komt overeen aan de 'then()-call in een promise')
+
+-----------
+
+npm i --> ipv npm install
+
+----
+
+
+
+
+
+
